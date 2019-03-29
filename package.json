@@ -16,4 +16,7 @@
     "jekyll"
   ],
   "author": "An Ounce of Silver",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
