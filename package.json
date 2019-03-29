@@ -1,0 +1,20 @@
+{
+  "name": "ounce-of-silver-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for An Ounce of Silver: https://www.anounceofsilver.com",
+  "scripts": {
+    "clean": "jekyll clean",
+    "prestart": "yarn clean",
+    "start": "jekyll serve",
+    "prebuild": "yarn clean",
+    "build": "jekyll build",
+    "deploy": "yarn build && gh-pages -d _site"
+  },
+  "keywords": [
+    "website",
+    "jekyll"
+  ],
+  "author": "An Ounce of Silver",
+  "license": "ISC"
+}
