@@ -14,10 +14,10 @@
     <header>
         <nav>
             <img id="nav-logo" src="{{ 'assets/ounce of silver nav logo.png' | relative_url }}" alt="An Ounce of Silver Ministries Logo" />
-            <a class="nav-link" href="{{ 'index.html' | relative_url }}">Home</a>
-            <a class="nav-link" href="{{ 'about.html' | relative_url }}">About</a>
-            <a class="nav-link" href="{{ 'services.html' | relative_url }}">Services</a>
-            <a class="nav-link" href="{{ 'contact.html' | relative_url }}">Contact</a>
+            <a class="nav-link" {% if page.url == "/" %}id="active"{% endif %} href="{{ 'index.html' | relative_url }}">Home</a>
+            <a class="nav-link" {% if page.url == "/about.html" %}id="active"{% endif %} href="{{ 'about.html' | relative_url }}">About</a>
+            <a class="nav-link" {% if page.url == "/services.html" %}id="active"{% endif %} href="{{ 'services.html' | relative_url }}">Services</a>
+            <a class="nav-link" {% if page.url == "/contact.html" %}id="active"{% endif %} href="{{ 'contact.html' | relative_url }}">Contact</a>
         </nav>
     </header>
 
